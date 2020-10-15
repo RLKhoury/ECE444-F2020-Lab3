@@ -31,7 +31,7 @@ def index():
     
 @app.route('/user/<name>')
 def user(name):
-    return render_template('user.html', name=name)
+    return render_template('user.html', current_time=dt.utcnow(), name=name)
     
     
 @app.errorhandler(404)
@@ -56,6 +56,6 @@ class HelloForm(FlaskForm):
         
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
    
     

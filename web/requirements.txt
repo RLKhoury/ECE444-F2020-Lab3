@@ -1,0 +1,5 @@
+flask==1.1.1
+flask_bootstrap
+flask_moment
+flask_wtf
+email_validator
